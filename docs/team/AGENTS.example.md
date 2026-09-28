@@ -5,16 +5,16 @@
 ## 目标和结构
 
 - 当前交付主线为旧版二批 CAD 图纸适配，不全面重写项目。
-- 主解决方案：`Teigha_Learn_Cad/Teigha_Learn_Cad.sln`。
+- 开发解决方案：`DWG.Development.sln`，不含安装项目。
 - 主程序：`Teigha_Learn_Cad/Teigha_Learn_Cad`。
 - `TeighaBase.cs` 承载大量业务逻辑；按任务范围修改，避免全文件重构或格式化。
-- `Teigha_Learn_Cad_Bin` 同时包含运行依赖，不按普通缓存整体清理。
+- 运行依赖和模板在 `vendor`，程序快照在 `app`，均按 manifest 校验。
 - 按需阅读 `docs/team/AI协作开发攻略.md` 及本次任务卡。
 
 ## 构建和运行
 
 - 传统 .NET Framework v4.0 工程；不要假定 `dotnet build` 即可使用。
-- 实际 Visual Studio 版本、配置、依赖准备、构建和启动命令：由负责人验证后补齐。
+- 构建：`powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\Build.ps1`。自检：`Start.ps1 -Build -Check`。所需目标框架环境见 DEPENDENCIES.md。
 - 解决方案包含安装项目，应用构建与安装包构建分开说明。
 - 新增 C# 文件要核实加入传统 `.csproj` 的 `Compile` 项。
 - 遇到缺失工具或依赖，说明限制，不虚构执行成功。

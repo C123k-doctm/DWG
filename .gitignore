@@ -45,3 +45,9 @@ Teigha_Learn_Cad_Bin/
 # Local result folders
 artifacts/
 TestResults/
+
+# Curated dependencies, startup templates and the tested application snapshot
+!vendor/runtime/*.dll
+!vendor/templates/*.dwg
+!app/*.exe
+!app/*.dll

@@ -47,7 +47,7 @@
 
 从仓库根目录打开：
 
-`Teigha_Learn_Cad\Teigha_Learn_Cad.sln`
+`DWG.Development.sln`（旧解决方案为 `Teigha_Learn_Cad\Teigha_Learn_Cad.sln`）
 
 现有主要位置：
 
@@ -58,25 +58,22 @@
 | `Teigha_Learn_Cad/Teigha_Learn_Cad/SingleCAD.cs` | 单图加载和页签处理 |
 | `Teigha_Learn_Cad/Teigha_Learn_Cad/TeighaBase.cs` | 图纸读取、选择和大量业务算法 |
 | `Teigha_Learn_Cad/TeighaCad_Bll` | CAD 支撑代码 |
-| `Teigha_Learn_Cad_Bin` | 部署目录，也被部分 DLL 引用使用 |
+| `vendor/runtime`、`vendor/templates`、`app` | 随仓库提供的依赖、模板及已编译程序 |
 
 搜索线束入口可以从 `toxianshuToolStripMenuItem_Click` 开始；接地相关入口可以从 `ClassifyEntities` 开始。这只是查找线索，要继续核实实际按钮调用和输出链路。
 
-### 3.3 先复现负责人的基线环境
+### 3.3 使用仓库提供的启动与构建入口
 
-现有工程是传统 .NET Framework 工程，主程序目标为 v4.0，不是 .NET Core 工程。负责人需要提供自己验证过的 Visual Studio 版本、构建配置、依赖包、运行库和启动步骤。
+依赖已归档到 `vendor/runtime`，模板在 `vendor/templates`；`app` 包含当前源码构建的程序快照。以项目根目录 README 和 DEPENDENCIES.md 为当前操作依据。
 
-本轮只检查了工程配置，没有验证所有电脑上的构建命令。首次环境排错注意：
-
-- 安装 .NET 桌面开发所需组件，并按基线补齐目标框架支持；安装最新 .NET SDK 不等于能构建此项目。
-- `ClassLibrary1` 被主程序通过 `bin/Debug` DLL 路径引用，要核实先构建该项目以及主程序实际引用的文件。
-- Krypton、Teigha 等 DLL 从 `Teigha_Learn_Cad_Bin` 引用，不能把整个目录当作普通构建缓存丢掉。
-- 解决方案包含 `Setup2.vdproj` 安装项目。缺少安装项目支持时，先单独构建应用及其依赖；首次运行不要求生成安装包。
-- 工程里出现 AnyCPU、x86 配置不能直接证明运行库兼容。遇到 DLL 加载错误先核实 DLL 位数、路径及基线配置，不能凭 AI 猜测全部改成 x64。
-- 保留现有 `App.config` 的混合运行时设置，未经验证不要删除。
-- 不为解决本机环境问题擅自升级框架、NuGet 或 CAD SDK；若确有必要，单独形成公共任务。
-
-负责人应整理依赖来源及安装说明。不能上传的运行库通过授权的团队渠道分发；不要上传授权密钥或个人凭据。
+- 只体验软件：双击 `启动软件.cmd`，不需要 Visual Studio 或在线 NuGet 还原。
+- 修改源码后：双击 `编译并启动.cmd`，它构建并运行最新源码，而非预编译快照。
+- 运行需要 64 位 Windows、.NET Framework 4.x 和 VC2008 SP1 x64 系统运行环境；缺少 VC2008 时启动脚本给出官方安装地址。
+- 编译需要 Visual Studio / Build Tools、.NET 桌面组件及 v4.0 目标框架引用程序集。应用和 CAD 库已固定 x64，兼容现有 AMD64 Teigha。
+- `ClassLibrary1` 已改为项目引用，不再依赖本机预先构建的 Debug DLL。
+- 不升级框架或 CAD SDK。工程新增文件仍需核实加入 `Compile` 项。
+- 使用 `DWG.Development.sln` 开发，它不含安装包项目；旧解决方案继续保留。
+- 自检使用 `powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\Start.ps1 -Build -Check`，不代替实图业务验收。
 
 ### 3.4 上手完成标准
 

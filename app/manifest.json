@@ -1,0 +1,25 @@
+{
+  "configuration": "Debug",
+  "files": [
+    {
+      "path": "ClassLibrary1.dll",
+      "size": 12288,
+      "sha256": "359438FD71061F621595F02956DA0C24784656C786935B7DE7ACA99BCE69C278"
+    },
+    {
+      "path": "Teigha_Learn_Cad.exe",
+      "size": 960000,
+      "sha256": "5972F49761E9C8BC3A7DDB262AE3E93F9F3CB8EF43060334990EA903046CD403"
+    },
+    {
+      "path": "Teigha_Learn_Cad.exe.config",
+      "size": 1291,
+      "sha256": "8253B32A84D0C3B103CA1B1FA16B6E4A8FE8872E85B40DB85A7FEAECA7D717DF"
+    },
+    {
+      "path": "TeighaCad_Bll.dll",
+      "size": 20992,
+      "sha256": "1D62F5D83B698F35FA89725C2DE24E7294C63119165011BFE2B07E0C37421DE6"
+    }
+  ]
+}

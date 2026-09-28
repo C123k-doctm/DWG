@@ -1,0 +1,429 @@
+{
+  "files": [
+    {
+      "path": "runtime/AcIdViewObj_3.03_9.tx",
+      "size": 118272,
+      "sha256": "A273E321E695CBF84E8430CD21C9F178B7D34B50F0BB168C0F11E4FFDAED4231"
+    },
+    {
+      "path": "runtime/AsdkSmileyDb_3.03_9.tx",
+      "size": 80896,
+      "sha256": "41B9CCBCA4FBC2B417AEB41CCC5D93249621C6353EFF46122F74855254101912"
+    },
+    {
+      "path": "runtime/AutoSurfServices_3.03_9.tx",
+      "size": 86016,
+      "sha256": "97098E4261652441C875328DF068AB961CFB52688355B79069D4B2AA5ECF5168"
+    },
+    {
+      "path": "runtime/ComponentFactory.Krypton.Docking.dll",
+      "size": 338944,
+      "sha256": "EDEAA642E1F8EE1CEEC7EB4041C2DB14156CFFFDA449442B57B9154A170CCCD4"
+    },
+    {
+      "path": "runtime/ComponentFactory.Krypton.Navigator.dll",
+      "size": 548352,
+      "sha256": "D994427B7CE5EA235582A932BA4B15751865CD5B23377F03419C7272E548F409"
+    },
+    {
+      "path": "runtime/ComponentFactory.Krypton.Ribbon.dll",
+      "size": 1211904,
+      "sha256": "ECFE08BA1E07D7D351798347569A67C4C319671D5D6155A8E7A12CD02D18EAC8"
+    },
+    {
+      "path": "runtime/ComponentFactory.Krypton.Toolkit.dll",
+      "size": 3009024,
+      "sha256": "3E1DC306796F5C607A9B7AB5D5EBA7FBD87EE27DC19403B20BCAA58E0AB81ACD"
+    },
+    {
+      "path": "runtime/ComponentFactory.Krypton.Workspace.dll",
+      "size": 288768,
+      "sha256": "450AA6882F836AFFD9036A328D0D2C18FBE898EE4E5D7B5ECCEA9B0D71FC7F3A"
+    },
+    {
+      "path": "runtime/DbCommands_3.03_9.tx",
+      "size": 230400,
+      "sha256": "BA421F7BBC19996823FC5E6753B04B225D1A34F191239D87CA24475B2ECE029F"
+    },
+    {
+      "path": "runtime/DbConstraints_3.03_9.tx",
+      "size": 764928,
+      "sha256": "6F09D96F0773D86985FFC7D588469AB7ACE635C1A02F0279DDAB278E81159836"
+    },
+    {
+      "path": "runtime/DWFCore.dll",
+      "size": 985600,
+      "sha256": "C15C28669109FDB7D9C33CFEEC59D1D1861C0D139DD645B96E1ED69D8037251E"
+    },
+    {
+      "path": "runtime/DWFToolkit.dll",
+      "size": 3190784,
+      "sha256": "B76E1E6F6D28574EA1AF5B2B20EE3322EB3723A3AFC77D0A46252E76BEF0FB25"
+    },
+    {
+      "path": "runtime/EPPlus.dll",
+      "size": 3066368,
+      "sha256": "919A42B2C1A7C973D332FB411094FBCD6CB0A2385F548FE194E0CFAC58D7D799"
+    },
+    {
+      "path": "runtime/EPPlus.Interfaces.dll",
+      "size": 6144,
+      "sha256": "532648714D2AB432ACEFF36BDEF9EC61A5AB515D68C131801DFA2FE78EF805FC"
+    },
+    {
+      "path": "runtime/EPPlus.System.Drawing.dll",
+      "size": 7168,
+      "sha256": "D4A791CF7EFA983CCB38EACACC0F5BF842C7810A30DA9CEAAF38425202EC0BA1"
+    },
+    {
+      "path": "runtime/ExCustObjs_3.03_9.tx",
+      "size": 904192,
+      "sha256": "22E0B25C574116D37EE8071E2FF4A0143690AD868AC5412878246CA0CC38BB28"
+    },
+    {
+      "path": "runtime/ExDynamicBlocks_3.03_9.tx",
+      "size": 48640,
+      "sha256": "DE9E7C089D5A2B5DF0C619CB4EDC65B3A83935AC6730483E4EDE12C7AA4151FE"
+    },
+    {
+      "path": "runtime/ExEvalWatchers_3.03_9.tx",
+      "size": 37376,
+      "sha256": "EF04D756036D1ADF81C9C8A376446365711CCF09989AB2654AF3FC8A341CF8FC"
+    },
+    {
+      "path": "runtime/ExFieldEvaluator_3.03_9.tx",
+      "size": 64512,
+      "sha256": "00B6CD619A12DA6B0760F909DE7988152349587BF1C676E51F9315B03FDAD32B"
+    },
+    {
+      "path": "runtime/FileDlgExt_3.03_9.dll",
+      "size": 28160,
+      "sha256": "46DFAD10785207881ED59ECB788FE8D074A5B4662FEBA45D6F2EC568DCAA7078"
+    },
+    {
+      "path": "runtime/GripPoints_3.03_9.tx",
+      "size": 139776,
+      "sha256": "7C11C42AD57465151233F41810CFF8AE7CB129A8E4DA0FF6AB675F6ABA402D8C"
+    },
+    {
+      "path": "runtime/HZFS.SHX",
+      "size": 2071338,
+      "sha256": "95EBA4CD6E9D2F89020C276881AF6FD3C90352CBFED24F1129791994170EBCEE"
+    },
+    {
+      "path": "runtime/HZKT.SHX",
+      "size": 2977525,
+      "sha256": "1C8008BD3893393FB3C7B7410EC4D10A1D6A7797DFD33F9A72517735CEA17479"
+    },
+    {
+      "path": "runtime/hztxt.shx",
+      "size": 1171617,
+      "sha256": "95F9EC57EEDE9095A2DC738EF5034887DC42C3DECE048724BC602FF7994144C7"
+    },
+    {
+      "path": "runtime/ICSharpCode.SharpZipLib.dll",
+      "size": 200704,
+      "sha256": "40B3D590F95191F3E33E5D00E534FA40F823D9B1BB2A9AFE05F139C4E0A3AF8D"
+    },
+    {
+      "path": "runtime/intecad.shx",
+      "size": 1327090,
+      "sha256": "1AC34137F95DE4ECEAF0CB965F5656D22D7C6996815475CA2EF71CC461E7B9E0"
+    },
+    {
+      "path": "runtime/ModelerGeometry_3.03_9.tx",
+      "size": 135168,
+      "sha256": "8B52D4676F5071AA1BEDD47DA9D198A2BA162E7CA2BD5F63E21FA9817680E89C"
+    },
+    {
+      "path": "runtime/NPOI.dll",
+      "size": 1600000,
+      "sha256": "469DBDC0269E98F2EF9F75FF02615B72F7191069B83BA780C2B8DFE57A529DB0"
+    },
+    {
+      "path": "runtime/NPOI.OOXML.dll",
+      "size": 396288,
+      "sha256": "615B1BEA00EAF8DDE7898C36C32FE70D1CD0108EB6895196652EFC384D4386BA"
+    },
+    {
+      "path": "runtime/NPOI.OpenXml4Net.dll",
+      "size": 84480,
+      "sha256": "23BB66C96EF657C2503A65920E524D6362BE03CD09C384E2DB3A8C3793C2FBDE"
+    },
+    {
+      "path": "runtime/NPOI.OpenXmlFormats.dll",
+      "size": 1867776,
+      "sha256": "68BB787842C6C55C73D641D68CF2EAB9437111AF90A641BFC47F1CF19B39C48C"
+    },
+    {
+      "path": "runtime/OdBagFiler_3.03_9.tx",
+      "size": 34304,
+      "sha256": "52B433BB3429585DA7280DAEBF623EA3C92DDB10A36D0221D502F97C7D40A582"
+    },
+    {
+      "path": "runtime/OdCurveFunctions_3.03_9.tx",
+      "size": 50176,
+      "sha256": "BD5B1925490D2300F3F7E60CB2591C1B30E4C5227B4FC2CC810BB4CCC64A7CAE"
+    },
+    {
+      "path": "runtime/OdOleItemHandler_3.03_9.tx",
+      "size": 24576,
+      "sha256": "AFC1FD862938F6344830EA71F767D4A7DC8B8CEA6E9F29016619E008D13429CA"
+    },
+    {
+      "path": "runtime/OpenCadTx_3.03_9.tx",
+      "size": 31232,
+      "sha256": "F79BDB6CD141C1BB9E2402D8327B96F8C3590736326EBCA75798FABCA2E666A5"
+    },
+    {
+      "path": "runtime/opencv_videoio_ffmpeg420_64.dll",
+      "size": 22066688,
+      "sha256": "BC6CCA11924263D28C5716AFBA6208101574D190301CE9281AF942C6D5C6B4DD"
+    },
+    {
+      "path": "runtime/OpenCvSharp.Blob.dll",
+      "size": 40448,
+      "sha256": "0EA091DCBAD4C30AD78F6E0320765E22858FB228A4C1F7825EC1D7C3A6BB4810"
+    },
+    {
+      "path": "runtime/OpenCvSharp.dll",
+      "size": 815616,
+      "sha256": "7A35ADD794F43CCB1AD0D146BAC909FCCB962264F76E6F7085839E59EDDF5AF2"
+    },
+    {
+      "path": "runtime/OpenCvSharp.Extensions.dll",
+      "size": 27136,
+      "sha256": "15291007F597B511A0060CF90DE6D8E5C0B4261B66364619ACADBAE3EEB20A00"
+    },
+    {
+      "path": "runtime/OpenCvSharp.UserInterface.dll",
+      "size": 12800,
+      "sha256": "52635E6CC73E3AD2D86500E680E7918456892FCE554D1099C211325B46DB451B"
+    },
+    {
+      "path": "runtime/OpenCvSharpExtern.dll",
+      "size": 53942784,
+      "sha256": "40D24A028A88D6467E9FBDEB23A3B613A65A08A7B2A308DF5F332C1907E373A5"
+    },
+    {
+      "path": "runtime/PlotSettingsValidator_3.03_9.tx",
+      "size": 58368,
+      "sha256": "46DE3BC8A3C58F8E01B3FD4FFC39F1628A7FB195A315733C5C5CE559B494B6FB"
+    },
+    {
+      "path": "runtime/PlotStyleServices_3.03_9.tx",
+      "size": 62464,
+      "sha256": "9396EFA18A47DEFDE1883E787DA6A2276976EB0DFD92D0E173CBBCFFC078241E"
+    },
+    {
+      "path": "runtime/RasterProcessor_3.03_9.tx",
+      "size": 33280,
+      "sha256": "AA95F84829D678A2ABB32F361D46736B875D1B2555B9F4284AADBEAAEA107A0E"
+    },
+    {
+      "path": "runtime/RecomputeDimBlock_3.03_9.tx",
+      "size": 393216,
+      "sha256": "9967EBC85E250984C0CB6B9E59564E9A3109B04B8EBDCB0BB11E0F77A4573A46"
+    },
+    {
+      "path": "runtime/RxRasterServices_3.03_9.tx",
+      "size": 153088,
+      "sha256": "CED2FC35B7F425C09506403449541322B9844415634CA6FC5DFA6B9E1AC8C7F5"
+    },
+    {
+      "path": "runtime/simplex.shx",
+      "size": 17816,
+      "sha256": "30DC50FA379935E4D7EB6E60041FA070A11FBA6DEAC337A2FA9E34DCB5BFBCC1"
+    },
+    {
+      "path": "runtime/SIMPLEX8.shx",
+      "size": 13813,
+      "sha256": "007902E04275E2CE2013389B307DA5EA0BC0F9788AE524F37EC4F60D099DB979"
+    },
+    {
+      "path": "runtime/System.ValueTuple.dll",
+      "size": 79496,
+      "sha256": "0B618A0840F17C94223282416A718BFDD4708B90B4E03997CE092F027E696B35"
+    },
+    {
+      "path": "runtime/TD_AcisBuilder_3.03_9.dll",
+      "size": 846336,
+      "sha256": "8738C65E04AAE2F3634E4ECA26846AC6A49E016C70AC809991707E33F5ADB5D4"
+    },
+    {
+      "path": "runtime/TD_Alloc_3.03_9.dll",
+      "size": 10240,
+      "sha256": "ED4E92118F6E9AFC04704338A83AF7150E76406C3853AD6365744B219873E405"
+    },
+    {
+      "path": "runtime/TD_Ave_3.03_9.tx",
+      "size": 436224,
+      "sha256": "A62DDA2C28D9954242531E37F07AE35FC3212D33219480D96A4A9DE784AABF87"
+    },
+    {
+      "path": "runtime/TD_BmpExport_3.03_9.dll",
+      "size": 13312,
+      "sha256": "8D7D27CD805B9DBC70D9A6AE96E993BD24850ADA3AF85A825644336C0755B8AA"
+    },
+    {
+      "path": "runtime/TD_Br_3.03_9.dll",
+      "size": 80896,
+      "sha256": "DB9BB13E6A20F255F0828477087986CDB881A2D8E960901E19DB5E1EF712384F"
+    },
+    {
+      "path": "runtime/TD_BrepRenderer_3.03_9.dll",
+      "size": 389120,
+      "sha256": "82CD7726976267FFF490F2F0BD3340521F698DFB7A637CCCE6498B1927C72604"
+    },
+    {
+      "path": "runtime/TD_Db_3.03_9.dll",
+      "size": 10582016,
+      "sha256": "54FE4A5ACAE61DF41108743BE724AF18E180A236AF88DC725C9627003E9070B4"
+    },
+    {
+      "path": "runtime/TD_DbRoot_3.03_9.dll",
+      "size": 341504,
+      "sha256": "031FFA54B50C6B3A4DE48302BB62F8E0A1DD1FC59ED6F5BC4B3749F1FD8B3E1D"
+    },
+    {
+      "path": "runtime/TD_Dwf7Export_3.03_9.dll",
+      "size": 410112,
+      "sha256": "6935541266C1EA045917EED1F5742B25799201E3F36E779876C79A571BB70F25"
+    },
+    {
+      "path": "runtime/TD_Dwf7Import_3.03_9.tx",
+      "size": 292864,
+      "sha256": "94932CFE0171BC53DAE204A2804E20F38D53700A5BD55EC61D98EC8706E50C29"
+    },
+    {
+      "path": "runtime/TD_DwfUnderlay_3.03_9.tx",
+      "size": 145408,
+      "sha256": "489E37CCD326DF247EE4623EEEC6813AF09DAC7690496CE5B9FB4873CDF455B6"
+    },
+    {
+      "path": "runtime/TD_DynBlocks_3.03_9.tx",
+      "size": 449024,
+      "sha256": "74BA1A3AFC6964CB37ADBD094B6210D17F04514F3408ED159CA4DAC24C7B9077"
+    },
+    {
+      "path": "runtime/TD_FtFontEngine_3.03_9.tx",
+      "size": 456192,
+      "sha256": "93567A9621F74A19AB7C3D33553FD377D8E2B55D82D5EFE4D89A9113572AAEC9"
+    },
+    {
+      "path": "runtime/TD_Ge_3.03_9.dll",
+      "size": 1352192,
+      "sha256": "1468826C4CFECCC12E990951C758180A8C98C1D84687FC31C20280F9464ADA96"
+    },
+    {
+      "path": "runtime/TD_Gi_3.03_9.dll",
+      "size": 944640,
+      "sha256": "FB46548B8ED8A500C676CF5313E02503E315E16BA3A3A3E54B3C3117672DF887"
+    },
+    {
+      "path": "runtime/TD_Gs_3.03_9.dll",
+      "size": 569344,
+      "sha256": "459DA995779670FF206AE710B55DC4502F4651647A24D98BDF5B7F952E9D7CD3"
+    },
+    {
+      "path": "runtime/TD_Mgd_3.03_9.dll",
+      "size": 4946752,
+      "sha256": "DF224B4111F4B16768B5FDC267E9BAF43AD80B20F16CD457EAB1C35568925CED"
+    },
+    {
+      "path": "runtime/TD_PdfExport_3.03_9.dll",
+      "size": 279040,
+      "sha256": "E235EAD2185CB21D671A1F28734241FDF396D0291B9009326B7104EC8BF9B9F6"
+    },
+    {
+      "path": "runtime/TD_PDFToolkit_3.03_9.dll",
+      "size": 460800,
+      "sha256": "B25643F7C2EE3B1AB162348091AB363E1642CC32E4313D38E48197E836C41F12"
+    },
+    {
+      "path": "runtime/TD_Root_3.03_9.dll",
+      "size": 679936,
+      "sha256": "FB5EFCC4EA2F86A4AD52F3B1F08D278CFEC38D564B5E8D2D62F023E08AD6B276"
+    },
+    {
+      "path": "runtime/TD_Sm_3.03_9.tx",
+      "size": 352768,
+      "sha256": "F243E5B94DF5B14DE811E92B3D233979B0B88A29A8BE813A262CF08548D8B8B1"
+    },
+    {
+      "path": "runtime/TD_SpatialIndex_3.03_9.dll",
+      "size": 33792,
+      "sha256": "44AC31B2012571D62B1B6E26BE55A5B054F0FDEEFD5C464067442AE5DF7093F2"
+    },
+    {
+      "path": "runtime/TD_STLExport_3.03_9.tx",
+      "size": 95744,
+      "sha256": "035363979140DCDCE53CF3B3FF28E206F1B82A57E0318CB545A9C9314104F5BE"
+    },
+    {
+      "path": "runtime/TD_SvgExport_3.03_9.tx",
+      "size": 273920,
+      "sha256": "B03206A3BA9213EACB28E2553A24E0C6A17035CBB07AB44A2805B19306BE5AB4"
+    },
+    {
+      "path": "runtime/ThreadPool_3.03_9.tx",
+      "size": 20992,
+      "sha256": "3CF09B70B6C8F583629F24DEAD995CDC4BEF48DDE9DD8B1F11F24B7CF7F79C40"
+    },
+    {
+      "path": "runtime/W3Dtk.dll",
+      "size": 1106944,
+      "sha256": "9EE0CF141ABFD969DE0FCE54F7A843C1224EBA386FC7388F270B03DFB6B10A8A"
+    },
+    {
+      "path": "runtime/WhipTk.dll",
+      "size": 988672,
+      "sha256": "D73D5D4F0851C33203957B0D81E3BA9FC81FE4E2CA700D65EA949A5F5953DEF7"
+    },
+    {
+      "path": "runtime/WinBitmap_3.03_9.txv",
+      "size": 169984,
+      "sha256": "3519D241EAC5050BAF522CB29B70617734F6EEE35D6ED26E3939B2F1A67604F6"
+    },
+    {
+      "path": "runtime/WinDirectX_3.03_9.txv",
+      "size": 399872,
+      "sha256": "F07E5C24EDD40B50832C0C100964CBC5573912C7F747349731EB33B7FA16382F"
+    },
+    {
+      "path": "runtime/WinGDI_3.03_9.txv",
+      "size": 197632,
+      "sha256": "77D4A43986DFAF8C36F3DD4DFB2527AB300FE6FDC8853D4278F09C17992F6F4C"
+    },
+    {
+      "path": "runtime/WinOpenGL_3.03_9.txv",
+      "size": 303104,
+      "sha256": "2F7E066BFFE608CBB5E004413C14BA274D6A365D14EB268C9CB4864F9DB6BEA5"
+    },
+    {
+      "path": "runtime/zlib.dll",
+      "size": 73216,
+      "sha256": "D405AC363A05372B54CFAF244C75F2C47EA1E330E400490EE46BD130AC41D1FA"
+    },
+    {
+      "path": "templates/dwgModel.dwg",
+      "size": 44285,
+      "sha256": "347142E73D18FCB1EB5CCF2545B22DABF8D78A085429C1812796AD43328AF1E1"
+    },
+    {
+      "path": "templates/gcad.dwt",
+      "size": 44243,
+      "sha256": "EF2900E86E0964FBFBA089D411B5B51ABB283CBD9119A14A20096A86767ACF7F"
+    },
+    {
+      "path": "templates/gcadiso.dwt",
+      "size": 43997,
+      "sha256": "BFB31AB6AAB4F8333CA186F679AC2F68FED841C2F10185E3C79977D9320507CB"
+    },
+    {
+      "path": "templates/test.dwg",
+      "size": 80037,
+      "sha256": "9E6875C6BA52DB6278EDC7F39CB366DCF850F2DCA506858ADA7752DF3F85D938"
+    }
+  ]
+}

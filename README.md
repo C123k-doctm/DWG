@@ -2,6 +2,36 @@
 
 当前开发主线是在现有版本上改善电气图、线束图分析与输出，按约定流程逐张验收二批 CAD 图纸。
 
+## 克隆后运行
+
+```powershell
+git clone https://github.com/code-z26/DWG.git
+cd DWG
+```
+
+双击根目录 **`启动软件.cmd`**。它检查随仓库提供的文件，将程序、DLL、字体、CAD 插件和默认模板复制到 `artifacts/desktop`，然后启动软件。无需 Visual Studio，也无需下载 NuGet 包。
+
+需要 64 位 Windows、.NET Framework 4.x 和 VC2008 SP1 x64 系统运行环境。启动时若提示缺少 VC2008，请按 [依赖说明](DEPENDENCIES.md) 中的微软官方地址安装一次，再重新启动。
+
+运行中生成的中间文件和报表位于运行目录，不会混入跟踪的源码或依赖。CAD 打开/保存对话框中选择的路径仍以用户操作为准。
+
+## 修改源码后运行
+
+安装 Visual Studio / Build Tools、.NET 桌面编译组件及 v4.0 目标框架引用程序集，然后双击 **`编译并启动.cmd`**。它编译最新源码并运行 `artifacts/development` 中的程序。
+
+`启动软件.cmd` 运行仓库中的程序快照；`编译并启动.cmd` 运行刚编译的源码。开发时使用后者，避免误测旧快照。
+
+也可以在 PowerShell 执行：
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\Build.ps1
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\Start.ps1 -Build -Check
+```
+
+`-Check` 执行启动自检后退出，检查 x64、OpenCV 原生调用、XLSX 创建、默认 DWG 模板、CAD 渲染设备和关闭流程；这不等于业务矩阵验收。
+
+负责人需要更新可直接运行的快照时，执行 `Build.ps1 -Publish`，再运行 `Start.ps1 -Check`，将 `app` 的更新与相应源码一起提交。
+
 ## 新成员从这里开始
 
 先阅读 [AI 协作开发攻略](docs/team/AI协作开发攻略.md)，再领取具体任务。首次上手先完成一张统一样例图的启动、分析、导出和人工核对。
@@ -16,9 +46,9 @@
 
 ## 打开工程
 
-使用 Visual Studio 打开 [Teigha_Learn_Cad.sln](Teigha_Learn_Cad/Teigha_Learn_Cad.sln)。解决方案中的“团队协作文档”文件夹包含上述文档。
+使用 Visual Studio 打开 [DWG.Development.sln](DWG.Development.sln)。它包含开发所需的三个源码项目和“团队协作文档”，不含安装包项目。原 [Teigha_Learn_Cad.sln](Teigha_Learn_Cad/Teigha_Learn_Cad.sln) 继续保留。
 
-项目使用传统 .NET Framework 工程，并引用部署目录中的运行库。统一环境和构建命令须由负责人实际验证；具体注意事项见开发攻略。
+项目使用传统 .NET Framework 工程，运行依赖已归档到 `vendor/runtime`。直接构建应用工程即可，不需要先构建安装包项目。详见 [依赖说明](DEPENDENCIES.md)。
 
 ## 每个任务的开发流程
 
