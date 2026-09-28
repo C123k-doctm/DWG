@@ -1,0 +1,47 @@
+# Visual Studio local state and build outputs
+.vs/
+**/bin/
+**/obj/
+**/Debug/
+**/Release/
+**/x64/
+**/x86/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+UpgradeLog*.htm
+_UpgradeReport_Files/
+**/Visual Studio 2022/Visualizers/
+
+# Dependencies and local deployment (prepare separately; see DEPENDENCIES.md)
+Teigha_Learn_Cad/packages/
+Teigha_Learn_Cad_Bin/
+
+# License / machine identity / private credentials
+*.key
+*.pfx
+*.p12
+*.pem
+.env
+.env.*
+
+# CAD input, generated reports, packages and binaries
+*.dwg
+*.dxf
+*.dwf
+*.xlsx
+*.xls
+*.csv
+*.exe
+*.dll
+*.pdb
+*.msi
+*.cab
+*.zip
+*.nupkg
+*.log
+
+# Local result folders
+artifacts/
+TestResults/

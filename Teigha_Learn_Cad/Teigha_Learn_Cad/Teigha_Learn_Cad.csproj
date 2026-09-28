@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\OpenCvSharp4.runtime.win.4.2.0.20200108\build\net\OpenCvSharp4.runtime.win.props" Condition="Exists('..\packages\OpenCvSharp4.runtime.win.4.2.0.20200108\build\net\OpenCvSharp4.runtime.win.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{114549A7-411A-43DA-91F8-AFFED0AE7F43}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Teigha_Learn_Cad</RootNamespace>
+    <AssemblyName>Teigha_Learn_Cad</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Teigha_Learn_Cad_Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>filetype_dwg_128px_1093523_easyicon.net.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClassLibrary1">
+      <HintPath>..\ClassLibrary1\bin\Debug\ClassLibrary1.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Docking">
+      <HintPath>..\..\Teigha_Learn_Cad_Bin\ComponentFactory.Krypton.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Navigator">
+      <HintPath>..\..\Teigha_Learn_Cad_Bin\ComponentFactory.Krypton.Navigator.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Ribbon">
+      <HintPath>..\..\Teigha_Learn_Cad_Bin\ComponentFactory.Krypton.Ribbon.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Toolkit">
+      <HintPath>..\..\Teigha_Learn_Cad_Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Workspace">
+      <HintPath>..\..\Teigha_Learn_Cad_Bin\ComponentFactory.Krypton.Workspace.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=6.2.3.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.6.2.3\lib\net35\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.Interfaces, Version=6.1.1.0, Culture=neutral, PublicKeyToken=a694d7f3b0907a61, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.Interfaces.6.1.1\lib\net35\EPPlus.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.System.Drawing, Version=6.1.1.0, Culture=neutral, PublicKeyToken=2308d35469c9bac0, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.System.Drawing.6.1.1\lib\net35\EPPlus.System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=2.0.6.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.0.6\lib\net40\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.0.6.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.0.6\lib\net40\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.0.6.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.0.6\lib\net40\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.0.6.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.0.6\lib\net40\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCvSharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenCvSharp4.4.2.0.20200108\lib\net40\OpenCvSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCvSharp.Blob, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenCvSharp4.4.2.0.20200108\lib\net40\OpenCvSharp.Blob.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCvSharp.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenCvSharp4.4.2.0.20200108\lib\net40\OpenCvSharp.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCvSharp.UserInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenCvSharp4.4.2.0.20200108\lib\net40\OpenCvSharp.UserInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\portable-net40+sl4+win8+wp8\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TD_Mgd_3.03_9, Version=3.0.0.8111, Culture=neutral, PublicKeyToken=460a0bef3ba73253, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Teigha_Learn_Cad_Bin\TD_Mgd_3.03_9.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="CustomDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomDialogForm.Designer.cs">
+      <DependentUpon>CustomDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tree.cs" />
+    <Compile Include="MainForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms.Designer.cs">
+      <DependentUpon>MainForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScreenBody.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScreenBody.designer.cs">
+      <DependentUpon>ScreenBody.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SingleCAD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SingleCAD.Designer.cs">
+      <DependentUpon>SingleCAD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeighaBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeighaBase.Designer.cs">
+      <DependentUpon>TeighaBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\EditEntitys.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\EditEntitys.Designer.cs">
+      <DependentUpon>EditEntitys.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Fontstyles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Fontstyles.Designer.cs">
+      <DependentUpon>Fontstyles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ManageLayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ManageLayer.Designer.cs">
+      <DependentUpon>ManageLayer.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CustomDialogForm.resx">
+      <DependentUpon>CustomDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms.resx">
+      <DependentUpon>MainForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ScreenBody.resx">
+      <DependentUpon>ScreenBody.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SingleCAD.resx">
+      <DependentUpon>SingleCAD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeighaBase.resx">
+      <DependentUpon>TeighaBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\EditEntitys.resx">
+      <DependentUpon>EditEntitys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Fontstyles.resx">
+      <DependentUpon>Fontstyles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ManageLayer.resx">
+      <DependentUpon>ManageLayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TeighaCad_Bll\TeighaCad_Bll.csproj">
+      <Project>{4f76c0c2-e144-4ca4-9f9e-9990719e1e0c}</Project>
+      <Name>TeighaCad_Bll</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\定点巡视32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\冻结.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\关灯.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\画笔%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\解锁.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\开灯.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\删除筛选项.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\十字光标.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\锁.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\太阳.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\拖拽.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\拖拽32白色.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\拖拽32白色2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\陀螺仪32白色.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\隐藏.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\右箭头.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\左箭头.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="filetype_dwg_128px_1093523_easyicon.net.ico" />
+    <None Include="Resources\kryptonRibbonGroupButton12.ImageSmall.png" />
+    <None Include="Resources\kryptonRibbonGroupButton20.ImageSmall.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\OpenCvSharp4.runtime.win.4.2.0.20200108\build\net\OpenCvSharp4.runtime.win.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\OpenCvSharp4.runtime.win.4.2.0.20200108\build\net\OpenCvSharp4.runtime.win.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
