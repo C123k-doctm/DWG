@@ -30,6 +30,8 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\Start.ps1 -Bui
 
 `-Check` 执行启动自检后退出，检查 x64、OpenCV 原生调用、XLSX 创建、默认 DWG 模板、CAD 渲染设备和关闭流程；这不等于业务矩阵验收。
 
+已完成仅含 Git 文件的干净副本构建与启动验证，详见 [验证记录](docs/启动验证记录.md)。
+
 负责人需要更新可直接运行的快照时，执行 `Build.ps1 -Publish`，再运行 `Start.ps1 -Check`，将 `app` 的更新与相应源码一起提交。
 
 ## 新成员从这里开始
