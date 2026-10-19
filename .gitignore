@@ -16,6 +16,7 @@ _UpgradeReport_Files/
 
 # Dependencies and local deployment (prepare separately; see DEPENDENCIES.md)
 Teigha_Learn_Cad/packages/
+/packages/
 Teigha_Learn_Cad_Bin/
 
 # License / machine identity / private credentials
@@ -48,6 +49,7 @@ TestResults/
 
 # Curated dependencies, startup templates and the tested application snapshot
 !vendor/runtime/*.dll
+!vendor/sdk402/runtime/*.dll
 !vendor/templates/*.dwg
 !app/*.exe
 !app/*.dll
