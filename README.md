@@ -5,9 +5,11 @@
 ## 克隆后运行
 
 ```powershell
-git clone https://github.com/code-z26/DWG.git
+git clone https://github.com/C123k-doctm/DWG.git
 cd DWG
 ```
+
+测试本次 SDK 4.02.2 改动，请在装有 Visual Studio／Build Tools 的 64 位 Windows 电脑上双击根目录 **`测试新版SDK.cmd`**。它校验随仓库提供的候选 SDK，编译当前源码并启动候选程序；还需 .NET Framework 4.5 目标框架组件和 VC++ 2012 x64 运行库。下方 `启动软件.cmd` 是旧版程序快照的入口。
 
 双击根目录 **`启动软件.cmd`**。它检查随仓库提供的文件，将程序、DLL、字体、CAD 插件和默认模板复制到 `artifacts/desktop`，然后启动软件。无需 Visual Studio，也无需下载 NuGet 包。
 
@@ -59,3 +61,9 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\Start.ps1 -Bui
 领取具体问题 → 创建任务分支 → 复现错误 → AI 定位原因 → 最小修改 → 实图验证 → 同组复核 → 提交 PR → 负责人集成与全图回归。
 
 输入图纸保持只读，输出保存到独立目录。编译成功、AI 宣称完成或成功生成 Excel，都不能代替业务结果核对。
+
+## 测试 SDK 4.02.2 候选版
+
+双击根目录 `测试新版SDK.cmd`：它先核对 `vendor/sdk402` 中的候选库，再用 .NET Framework 4.5 编译源码，部署到被 Git 忽略的 `artifacts/sdk-candidate` 并启动。需要 Visual Studio / Build Tools、.NET Framework 4.5 目标框架组件和 VC++ 2012 x64 运行库。原有 `启动软件.cmd`、`编译并启动.cmd` 仍使用旧版 SDK。
+
+候选库来源及逐文件哈希见 `vendor/sdk402/manifest.json`。本次自动检查显示：7、24 号绘制卡死已解除，原先打开失败的 10 张图可自动加载、绘制和遍历；19、33 号仍报版本错误。实际业务结果的验收状态见 [绘制卡死任务卡](docs/team/tasks/SDK402-001-7与24绘制卡死.md)、[DWG 打开任务卡](docs/team/tasks/SDK402-002-部分DWG打开失败.md)和[阶段性验证说明](docs/team/tasks/SDK402-阶段性验证与提交说明.md)。
